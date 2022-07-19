@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/938099bdb0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Stef's Weather App</title>
+  </head>
+
+  <body>
+      <div class="container">
+            <div class="card card-weather">
+              <div class="card-body">
+                <form id="city">
+                  <h2>Barcelona</h2>
+                </div>
+                <div class="todaysDate">Sunday 16:05</div>
+                <div class="currentEmoji">
+                    <i class="fa-solid fa-sun"></i>
+                </div>
+                <div class="currentWeather">
+                    <h3>Sunny</h3>
+                  </div>
+                <div class="float-left">
+                  <span class="todaysStats" id="todaysStats">25</span>
+                  <span class="units"> <a href="#" id="celsius-link">˚C </a> | <a href="#" id="fahrenheit-link">˚F</a></span>
+                </span>
+                </div>
+              </div>
+              <div class="card">
+                <div class="row">
+                  <div class="col-sm">
+                    <p class="mb-0">Wed</p>
+                    <p class="mb-0">20°</p>
+                  </div>
+                  <div class="col-sm">
+                    <p class="mb-1">Thu</p>
+                    <p class="mb-0">31°</p>
+                  </div>
+                  <div class="col-sm">
+                    <p class="mb-1">Fri</p>
+                    <p class="mb-0">28°</p>
+                  </div>
+                  <div class="col-sm">
+                    <p class="mb-1">Sat</p>
+                    <p class="mb-0">30°</p>
+                  </div>
+                  <div class="col-sm">
+                    <p class="mb-1">Sun</p>
+                    <p class="mb-0">29°</p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <label for="searchInput" class="form-label"></label>
+                <input type="text" class="form-control" id=search-text-input placeholder="Enter a city" aria-label="Recipient's username" aria-describedby="button-addon2">
+               <div class="input-group-append">
+                
+               <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
+               <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i class="<i class="fa-solid fa-location-dot"></i></button>
+           </div>
+       
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src ="src/index.js"></script>
+</html>

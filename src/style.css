@@ -3,6 +3,19 @@ body {
   background: #e3f6f5;
 }
 
+h2 {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.h3,
+h3 {
+  font-size: 20px;
+}
+
 .container {
   width: 800px;
   height: 450px;
@@ -43,13 +56,19 @@ body {
   color: #fff36c;
 }
 
-.h3,
-h3 {
-  font-size: 20px;
-}
-
 p {
   font-size: 16px;
+}
+
+li {
+  list-style: none;
+  position: relative;
+  color: rgb(135, 135, 135);
+  font-size: 16px;
+  bottom: 100px;
+  right: 30px;
+  top: 0px;
+  left: 500px;
 }
 
 .card-weather .card-body {

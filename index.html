@@ -24,28 +24,30 @@
 
   <body>
       <div class="container">
-            <div class="card card-weather">
-              <div class="card-body">
-                <form id="city">
-                  <h2>Barcelona</h2>
+        <div class="weather-app-wrapper">
+          <div class="background">
+              <div class="overview">
+                  <h2 id="city"></h2>
+                  <div class="todaysDate"></div>
+                <ul>
+                  <li> <span id="date"></span></li>
+                  <li id="description"></li>
+                </ul>
                 </div>
-                <div class="todaysDate">Sunday 16:05</div>
                 <div class="currentEmoji">
                     <i class="fa-solid fa-sun"></i>
                 </div>
-                <div class="currentWeather">
-                    <h3>Sunny</h3>
-                  </div>
-                <div class="float-right">
-                  <span class="todaysStats" id="todaysStats">25</span>
+                <div class="row">
+                <div class="float-left">
+                  <strong id="temperature"></strong>
                   <span class="units"> <a href="#" id="celsius-link">˚C </a> | <a href="#" id="fahrenheit-link">˚F</a></span>
                 </span>
                 </div>
-                 <div class="float-left">
+                </div>
+                 <div class="col-6">
                   <ul>
-                    <li>Precipitation: 0%</li>
-                    <li>Humidity: 73%</li>
-                    <li>Wind: 2km/h</li>
+                    <li>Humidity: <span id="humidity"></span>%</li>
+                    <li>Wind: <span id="wind"></span> m/h</li>
                    </ul>
                 </div>
               </div>
@@ -72,22 +74,24 @@
                     <p class="mb-0">29°</p>
                   </div>
                 </div>
-              <div class="input-group mb-3">
-                <label for="searchInput" class="form-label"></label>
-                <input type="text" class="form-control" id=search-text-input placeholder="Enter a city" aria-label="Recipient's username" aria-describedby="button-addon2">
-               <div class="input-group-append">
-                
-               <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
-               <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i class="<i class="fa-solid fa-location-dot"></i></button>
+              </div>
+              <form id="search-form" class="mb-3">
+              <div class="row">
+                <div class="col-9">
+                  <input type="search" placeholder="Enter a city..." class="form-control" id="city-input" autocomplete="off" />
+                </div> 
+               <div class="col-3">
+                  <button class="btn btn-outline-secondary" type="submit" value="Search" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button class="btn btn-outline-secondary" type="submit" value="Search" id="button-addon2"><i class="fa-solid fa-location-dot"></i></button>
+               </div>
+              </div>
+              </form> 
            </div>
-           </div>
-            </div>
             <p class="footer">
               <a href="https://github.com/estela-GitHub/weather-app" target="_blank">Open source code</a> by Stef
            </p>
           </div>
         </div>
-      </div>
     </div>
   </body>
   <script src ="src/index.js"></script>

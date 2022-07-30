@@ -13,6 +13,7 @@ h2 {
   font-weight: 200;
   line-height: 28px;
   margin-bottom: 0;
+  margin-left: -5px;
 }
 
 .city {
@@ -49,11 +50,16 @@ h2 {
 .currentTemperature {
   position: relative;
   padding: 10px 100px 30px 30px;
-  font-size: 30px;
+  font-size: 48px;
   top: 5px;
   bottom: 70px;
   left: -30px;
   color: #fdfdfd;
+}
+
+.units {
+  font-size: 30px;
+  color: #6b63ff;
 }
 
 .row {
@@ -63,12 +69,6 @@ h2 {
 ul {
   margin: 0;
   padding: 0px 10px;
-}
-
-.currentEmoji {
-  margin-bottom: -2px;
-  font-size: 30px;
-  color: #ff6984;
 }
 
 li {
@@ -110,11 +110,6 @@ li:first-letter {
   color: #ff6984;
 }
 
-.weather-forecast-temperatures {
-  font-size: 13px;
-  color: #fdfdfd;
-}
-
 .city-input.form-control {
   margin: 0px 200px;
   line-height: 50px;
@@ -124,27 +119,6 @@ li:first-letter {
   margin-bottom: 20px;
 }
 
-.col {
-  margin: 0px 10px 0px 0px;
-}
-
-.weather-temperature img {
-  margin-right: 5px;
-  height: 64px;
-  width: 64px;
-}
-
-.weather-forecast {
-  margin-top: -30px;
-}
-
-.weather-temperature strong {
-  color: rgb(33, 33, 33);
-  font-size: 64px;
-  line-height: 100;
-  font-weight: 400;
-}
-
 .weather-temperature .units {
   position: relative;
   font-size: 16px;
@@ -152,14 +126,8 @@ li:first-letter {
   color: #6b63ff;
 }
 
-.weather-temperature .active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-}
-
-.weather-temperature .active:hover {
-  text-decoration: none;
-  color: #6b63ff;
+.weather-forecast {
+  margin-top: -43px;
 }
 
 .weather-forecast-date {
@@ -167,12 +135,18 @@ li:first-letter {
   opacity: 0.5;
 }
 
+.weather-forecast-temperatures {
+  font-size: 13px;
+  color: #fdfdfd;
+}
+
 .weather-forecast-temperature-min {
   opacity: 0.5;
 }
 
-.weather-forecast-temperatures {
-  font-size: 13px;
+.row {
+  padding: 20px 16px 16px 16px;
+  text-decoration: none;
 }
 
 .footer {
